@@ -1,0 +1,13 @@
+<!DOCTYPE html><script>
+    'use strict';
+    async function f() {
+    
+      try {
+        let response = await fetch('http://www.google.com');
+      } catch(err) {
+        alert(err); // TypeError: failed to fetch
+      }
+    }
+    
+    f();
+    </script>
